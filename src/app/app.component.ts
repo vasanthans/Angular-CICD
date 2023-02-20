@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-CICD';
+  title = 'CI/CD Project with Google Cloud Build';
 }
