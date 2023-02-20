@@ -1,0 +1,10 @@
+steps:
+# Installs the required npm packages by running npm install
+  - name: "gcr.io/cloud-builders/npm"
+    args: ["install"]
+# Builds the project by running npm run build
+  - name: "gcr.io/cloud-builders/npm"
+    args: ["run", "build"]
+# Deploys the project to Google App Engine by running gcloud app deploy
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["app", "deploy"]
