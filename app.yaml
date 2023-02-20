@@ -7,3 +7,13 @@ handlers:
     upload: dist/angular-cicd/index.html
   - url: /
     static_dir: dist/angular-cicd
+
+skip_files:
+  - e2e/
+  - node_modules/
+  - src/
+  - ^(.*/)?\..*$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.md$
+  - ^(.*/)?.*\.yaml$
+  - ^LICENSE
